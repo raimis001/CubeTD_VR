@@ -85,6 +85,9 @@ public class EnemyManager : MonoBehaviour
 		yield return new WaitForSeconds(waweTime);
 		waves[currentWawe].StartWave(wawePoints[0],this);
 		yield return waves[currentWawe].WaitForEnd();
+
+		++currentWawe;
+		if (currentWawe >= waves.Length) currentWawe = 0;
 		StartCoroutine(WaitForNextWawe());
 	}
 }

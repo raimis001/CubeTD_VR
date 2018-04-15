@@ -8,9 +8,10 @@ public class Chamber : MonoBehaviour
 
 	internal float lives = 1f;
 
-	public static void Create(HexaCell cell, GameObject prefab)
+	public static void Create(HexaCell cell, GameObject prefab, Transform parent)
 	{
 		GameObject obj = Instantiate(prefab);
+		obj.transform.SetParent(parent);
 		obj.transform.position = cell.position;
 
 		Chamber chamber = obj.GetComponent<Chamber>();
@@ -18,12 +19,12 @@ public class Chamber : MonoBehaviour
 
 		chamber.cell = cell;
 		cell.chamber = chamber;
-	} 
+	}
 
 	// Use this for initialization
 	void Start()
 	{
-		text.text = cell.Index;
+		if (text) text.text = cell.Index;
 
 	}
 

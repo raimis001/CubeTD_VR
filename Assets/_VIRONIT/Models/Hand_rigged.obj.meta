@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 4709f3cbcf044be49877345e3e691574
+timeCreated: 1516275780
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bone_finger_1_1
+    100002: bone_finger_1_2
+    100004: bone_finger_1_3
+    100006: bone_finger_2_1
+    100008: bone_finger_2_2
+    100010: bone_finger_2_3
+    100012: bone_finger_2_4
+    100014: bone_finger_3_1
+    100016: bone_finger_3_2
+    100018: bone_finger_3_3
+    100020: bone_finger_3_4
+    100022: bone_finger_4_1
+    100024: bone_finger_4_2
+    100026: bone_finger_4_3
+    100028: bone_finger_4_4
+    100030: bone_finger_5_1
+    100032: bone_finger_5_2
+    100034: bone_finger_5_3
+    100036: bone_finger_5_4
+    100038: bone_main_hande
+    100040: //RootNode
+    100042: Hand_rigged
+    400000: bone_finger_1_1
+    400002: bone_finger_1_2
+    400004: bone_finger_1_3
+    400006: bone_finger_2_1
+    400008: bone_finger_2_2
+    400010: bone_finger_2_3
+    400012: bone_finger_2_4
+    400014: bone_finger_3_1
+    400016: bone_finger_3_2
+    400018: bone_finger_3_3
+    400020: bone_finger_3_4
+    400022: bone_finger_4_1
+    400024: bone_finger_4_2
+    400026: bone_finger_4_3
+    400028: bone_finger_4_4
+    400030: bone_finger_5_1
+    400032: bone_finger_5_2
+    400034: bone_finger_5_3
+    400036: bone_finger_5_4
+    400038: bone_main_hande
+    400040: Hand_rigged
+    400042: //RootNode
+    2300000: bone_finger_1_1
+    2300002: bone_finger_1_2
+    2300004: bone_finger_1_3
+    2300006: bone_finger_2_1
+    2300008: bone_finger_2_2
+    2300010: bone_finger_2_3
+    2300012: bone_finger_2_4
+    2300014: bone_finger_3_1
+    2300016: bone_finger_3_2
+    2300018: bone_finger_3_3
+    2300020: bone_finger_3_4
+    2300022: bone_finger_4_1
+    2300024: bone_finger_4_2
+    2300026: bone_finger_4_3
+    2300028: bone_finger_4_4
+    2300030: bone_finger_5_1
+    2300032: bone_finger_5_2
+    2300034: bone_finger_5_3
+    2300036: bone_finger_5_4
+    2300038: bone_main_hande
+    2300040: Hand_rigged
+    3300000: bone_finger_1_1
+    3300002: bone_finger_1_2
+    3300004: bone_finger_1_3
+    3300006: bone_finger_2_1
+    3300008: bone_finger_2_2
+    3300010: bone_finger_2_3
+    3300012: bone_finger_2_4
+    3300014: bone_finger_3_1
+    3300016: bone_finger_3_2
+    3300018: bone_finger_3_3
+    3300020: bone_finger_3_4
+    3300022: bone_finger_4_1
+    3300024: bone_finger_4_2
+    3300026: bone_finger_4_3
+    3300028: bone_finger_4_4
+    3300030: bone_finger_5_1
+    3300032: bone_finger_5_2
+    3300034: bone_finger_5_3
+    3300036: bone_finger_5_4
+    3300038: bone_main_hande
+    3300040: Hand_rigged
+    4300000: bone_finger_1_1
+    4300002: bone_finger_1_2
+    4300004: bone_finger_1_3
+    4300006: bone_finger_2_1
+    4300008: bone_finger_2_2
+    4300010: bone_finger_2_3
+    4300012: bone_finger_2_4
+    4300014: bone_finger_3_1
+    4300016: bone_finger_3_2
+    4300018: bone_finger_3_3
+    4300020: bone_finger_3_4
+    4300022: bone_finger_4_1
+    4300024: bone_finger_4_2
+    4300026: bone_finger_4_3
+    4300028: bone_finger_4_4
+    4300030: bone_finger_5_1
+    4300032: bone_finger_5_2
+    4300034: bone_finger_5_3
+    4300036: bone_finger_5_4
+    4300038: bone_main_hande
+    4300040: Hand_rigged
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hand_riggedMat
+    second: {fileID: 2100000, guid: 918082914ad3d5e40b2a6b907235d87d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_1_1Mat
+    second: {fileID: 2100000, guid: b90e265736ca32b49a566f328b07c9cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_1_2Mat
+    second: {fileID: 2100000, guid: d299d5192f46af842ab512d370c61886, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_1_3Mat
+    second: {fileID: 2100000, guid: 9c8df0f5964697845a98f74266a0165e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_2_1Mat
+    second: {fileID: 2100000, guid: 92de4c5397dae8a4bb969039769dbc31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_2_2Mat
+    second: {fileID: 2100000, guid: 4c55b27b432a94642957dcddf8494fde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_2_3Mat
+    second: {fileID: 2100000, guid: 376ca74f1a6bff3459fbe74bba683b1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_2_4Mat
+    second: {fileID: 2100000, guid: 1811ac53dc862ec49b0f2975682df0d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_3_1Mat
+    second: {fileID: 2100000, guid: 7adf69742ad34244abe5b0a58287f449, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_3_2Mat
+    second: {fileID: 2100000, guid: 2153a87af96b17f4ebe042208bb98463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_3_3Mat
+    second: {fileID: 2100000, guid: 4a7b87cf6b771f74db10153a051a323a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_3_4Mat
+    second: {fileID: 2100000, guid: 6cdcb91f0c1b4a746a7400a600b3195d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_4_1Mat
+    second: {fileID: 2100000, guid: b6c9d7e88a10e7e4e8fe2826e9f89f59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_4_2Mat
+    second: {fileID: 2100000, guid: 3962e75250718a04ab3cfcbf06a87463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_4_3Mat
+    second: {fileID: 2100000, guid: c7dd88d85f9e6394b88d393244a291e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_4_4Mat
+    second: {fileID: 2100000, guid: a3db7040e1e08fd4f8c25f6fce7b8bef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_5_1Mat
+    second: {fileID: 2100000, guid: 569edd4a819751c429cd25adde7374eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_5_2Mat
+    second: {fileID: 2100000, guid: 240b99d4218c98b4ca80e1245a092c0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_5_3Mat
+    second: {fileID: 2100000, guid: 7674631726e7be4459d4f190fe5ca794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_finger_5_4Mat
+    second: {fileID: 2100000, guid: 22d5be269bf779b4fac635e8221a6cf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bone_main_handeMat
+    second: {fileID: 2100000, guid: 045c693264416ed41b8252b49712cd55, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

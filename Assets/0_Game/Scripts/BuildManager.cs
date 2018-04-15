@@ -114,15 +114,17 @@ public class BuildManager : MonoBehaviour
 	{
 		Instance = this;
 	}
-	// Use this for initialization
+
+	
 	void Start()
 	{
 		hexaWidth = Mathf.Sqrt(3) / 2f * hexaHeight;
 		hexaHoriz = hexaWidth / 2f;
 		hexaVert = hexaHeight * 3f / 4f;
 
-		IntVector start = new IntVector(0, 0);
-		CreateChamber(start.col, start.row);
+		//IntVector start = new IntVector(0, 0);
+		//CreateChamber(start.col, start.row);
+
 
 		for (int i = -10; i < 10; i++) 
 			for (int j = -10; j < 10; j++)
@@ -216,7 +218,7 @@ public class BuildManager : MonoBehaviour
 
 		HexaCell cell = new HexaCell(col, row);
 
-		Chamber.Create(cell, Instance.hexaPrefab);
+		Chamber.Create(cell, Instance.hexaPrefab, Instance.transform);
 		grid.Add(cell.Index, cell);
 	}
 

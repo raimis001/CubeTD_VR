@@ -5,6 +5,8 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
 
+	public Transform hitTarget;
+
 	public Gradient progressColors;
 
 	[Range(0, 3)]
@@ -13,19 +15,29 @@ public class Enemy : MonoBehaviour
 	public float shotDamage = 0.1f;
 
 	private NavMeshAgent agent;
-	private float health = 1f;
+	private float health = 10f;
+
+	[SerializeField]
+	private int testHits;
 
 	// Use this for initialization
 	void Start()
 	{
-		agent = GetComponent<NavMeshAgent>();
+		if (!hitTarget) hitTarget = transform;
+
 		Renderer rend = GetComponent<Renderer>();
-		rend.material.color = progressColors.Evaluate(1-health);
-		agent.SetDestination(Vector3.zero);
-		agent.updateRotation = true;
+		if (rend)
+		{
+			rend.material.color = progressColors.Evaluate(1 - health);
+		}
+		agent = GetComponent<NavMeshAgent>();
+		if (agent)
+		{
+			agent.SetDestination(Vector3.zero);
+			agent.updateRotation = true;
+		}
 		StartCoroutine(Shot());
 	}
-
 
 	private IEnumerator Shot()
 	{
@@ -44,19 +56,22 @@ public class Enemy : MonoBehaviour
 		chamber.Damage(shotDamage);
 	}
 
-	private void OnTriggerEnter(Collider collision)
+	public void Hit(float damage)
 	{
-		Bullet bullet = collision.gameObject.GetComponent<Bullet>();
-		if (!bullet) return;
+		//Debug.Log("Hit enemy");
+		testHits++;
+		health -= damage;
+		if (health > 0) return;
 
-		Destroy(bullet.gameObject);
-
-		health -= 0.1f;
-		Renderer rend = GetComponent<Renderer>();
-		rend.material.color = progressColors.Evaluate(1-health);
-		if (health <= 0)
-		{
-			Destroy(gameObject);
-		}
+		Destroy(gameObject);
 	}
+
+	private void Update()
+	{
+		if (agent) return;
+		transform.RotateAround(Vector3.zero, Vector3.up, 5f * Time.deltaTime);
+	}
+
+
+
 }

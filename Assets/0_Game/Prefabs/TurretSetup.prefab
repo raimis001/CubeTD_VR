@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1260406626459432}
+  m_IsPrefabParent: 1
+--- !u!1 &1260406626459432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4934522750040832}
+  - component: {fileID: 114123671599441464}
+  - component: {fileID: 114920507987207736}
+  - component: {fileID: 114226509829209372}
+  m_Layer: 0
+  m_Name: TurretSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1509557960347118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4116948744143454}
+  - component: {fileID: 114263189307681258}
+  m_Layer: 0
+  m_Name: PoolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4116948744143454
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509557960347118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4934522750040832}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4934522750040832
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260406626459432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4116948744143454}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114123671599441464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260406626459432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60a6754ed1f928419a31d64ed0c1659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 400000, guid: 9eeb3f92e3355994db8dc67cb3ea8ba0, type: 2}
+  turretsSetup:
+  - turretName: Vulcan
+    turretType: 0
+    projectile: {fileID: 400000, guid: 9c9db428f4f695f4aac88c02ddce598a, type: 2}
+    muzzle: {fileID: 400002, guid: ec0a45307366da34daa46a505164d82d, type: 2}
+    impact: {fileID: 400000, guid: cdc7f8b221bc06c48a2a62c92a8e2791, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: b12187930d6f4b04b8a14c4e942c7f93, type: 3}
+    - {fileID: 8300000, guid: ee945bf47a1d77342b0e71d7e4421695, type: 3}
+    - {fileID: 8300000, guid: 4baa43d1a2555714a9dcc3b0b06a220c, type: 3}
+    - {fileID: 8300000, guid: fd4838b36b4237d41b494abc26434ccd, type: 3}
+    - {fileID: 8300000, guid: 9d8dda217f9277a4190a9e722542bd4a, type: 3}
+    - {fileID: 8300000, guid: e2b151c357bc3d848ab8ae87d63650f5, type: 3}
+    audioShot: {fileID: 8300000, guid: 14ba2f7d17b7a434f851c648484e0806, type: 3}
+    audioDistance: 7
+    hitpoints: 0
+    burst: 1
+    force: 0.5
+    shotDelay: 0.3
+    loop: 0
+  - turretName: Solo Gun
+    turretType: 1
+    projectile: {fileID: 400012, guid: 440fe57f42038354092415c07a4d55a9, type: 2}
+    muzzle: {fileID: 400000, guid: b16d97c287e513344af2399ff138cd27, type: 2}
+    impact: {fileID: 400004, guid: fd953838f1872d042a334b466e298967, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 77772fcc3692aae40a14a99b952c4168, type: 3}
+    - {fileID: 8300000, guid: 63f3836c15cf4de459c87f3181801d6c, type: 3}
+    - {fileID: 8300000, guid: d9eac4dfc29abe64faa49306ee4b4205, type: 3}
+    - {fileID: 8300000, guid: e9de0ff43b3234847b84dac0c1304373, type: 3}
+    audioShot: {fileID: 8300000, guid: b3325a8b2aa1db6408262e058666a0e2, type: 3}
+    audioDistance: 10
+    hitpoints: 0.1
+    burst: 1
+    force: 0.1
+    shotDelay: 0.3
+    loop: 0
+  - turretName: Siper
+    turretType: 2
+    projectile: {fileID: 400000, guid: 12e7c1b739173c946b6fa3d40e9f62d1, type: 2}
+    muzzle: {fileID: 400004, guid: 43a8e47b31adb9a47b81c4653b412e5c, type: 2}
+    impact: {fileID: 400004, guid: a980d2b7788c0ef489f3c79f44da79e1, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 4e6abf7c3e3fb594bb0fdd6dbd713716, type: 3}
+    - {fileID: 8300000, guid: 390e6d5686f9f034bb094a074d154504, type: 3}
+    - {fileID: 8300000, guid: a615af9796db06242a84e175dec40171, type: 3}
+    - {fileID: 8300000, guid: 7ee9ede440422534192830c927230cc4, type: 3}
+    - {fileID: 8300000, guid: 07e57c9acd21fb24082df8e9fe8fac6c, type: 3}
+    - {fileID: 8300000, guid: 2406acbce4660b14caf81514ebdb27a3, type: 3}
+    audioShot: {fileID: 8300000, guid: 0fc8936ede4d4c94cbc04ad25b442ebf, type: 3}
+    audioDistance: 7
+    hitpoints: 0.5
+    burst: 1
+    force: 1
+    shotDelay: 0.7
+    loop: 0
+  - turretName: Shot Gun
+    turretType: 3
+    projectile: {fileID: 400002, guid: 0072b525437a5ed4891ebd255ec94fe6, type: 2}
+    muzzle: {fileID: 400002, guid: ca6dec307275d294ba519247d04b6733, type: 2}
+    impact: {fileID: 400000, guid: 5f10243d9632db04bb987838fb3b36b7, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 4e6abf7c3e3fb594bb0fdd6dbd713716, type: 3}
+    - {fileID: 8300000, guid: 390e6d5686f9f034bb094a074d154504, type: 3}
+    - {fileID: 8300000, guid: a615af9796db06242a84e175dec40171, type: 3}
+    - {fileID: 8300000, guid: 7ee9ede440422534192830c927230cc4, type: 3}
+    - {fileID: 8300000, guid: 07e57c9acd21fb24082df8e9fe8fac6c, type: 3}
+    - {fileID: 8300000, guid: 2406acbce4660b14caf81514ebdb27a3, type: 3}
+    audioShot: {fileID: 8300000, guid: 9db28af8564ff3f44ba56f1523e6561b, type: 3}
+    audioDistance: 7
+    hitpoints: 0.1
+    burst: 1
+    force: 2
+    shotDelay: 1
+    loop: 0
+  - turretName: Seeker
+    turretType: 4
+    projectile: {fileID: 400000, guid: 49ca46ce7082ccf4c91329cd9b7c4b61, type: 2}
+    muzzle: {fileID: 400004, guid: 43a8e47b31adb9a47b81c4653b412e5c, type: 2}
+    impact: {fileID: 400010, guid: 762a17aff08aa1f40ac72b27c15fe2d1, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: e49a8a34f479db846af1106a5fe97951, type: 3}
+    - {fileID: 8300000, guid: 75c2520332d47c543ab6ecbed510a94f, type: 3}
+    - {fileID: 8300000, guid: 0e06c997f66813242af742395e3e0dc3, type: 3}
+    audioShot: {fileID: 8300000, guid: deb31dbb1a26c054891a4186c584a5d0, type: 3}
+    audioDistance: 7
+    hitpoints: 0.1
+    burst: 1
+    force: 1
+    shotDelay: 0.5
+    loop: 0
+  - turretName: Rail Gun
+    turretType: 5
+    projectile: {fileID: 400000, guid: ec0fb8bef2fb8a5459c55c3700521b70, type: 2}
+    muzzle: {fileID: 400000, guid: b16d97c287e513344af2399ff138cd27, type: 2}
+    impact: {fileID: 400010, guid: 2e92e894e0311c14c87f9544b2c88693, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: af14353652db15440bec11e44e5a7012, type: 3}
+    - {fileID: 8300000, guid: a8bd6c1598e010443ae8a060e2fb9839, type: 3}
+    - {fileID: 8300000, guid: dd339bdbf714c874abd1b5430c2f37eb, type: 3}
+    audioShot: {fileID: 8300000, guid: 5175afc9a2f111d4fac8d2ee0a71fe17, type: 3}
+    audioDistance: 7
+    hitpoints: 0.1
+    burst: 1
+    force: 0.1
+    shotDelay: 0.1
+    loop: 0
+  - turretName: Laser impulse
+    turretType: 11
+    projectile: {fileID: 400004, guid: 64703ac190f718b4abd5d10cb23c96ce, type: 2}
+    muzzle: {fileID: 400004, guid: 45116fb1512dc704b99d70267628129a, type: 2}
+    impact: {fileID: 400010, guid: ce59e020d922ccb43866dee1ba26a673, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 4a5f1abf2aef3f84986f73751d63fc11, type: 3}
+    - {fileID: 8300000, guid: cc1180ee178a70e4db502919244f6755, type: 3}
+    - {fileID: 8300000, guid: 60ba8f3f1e4b1b145ad629b5ba4d5c0b, type: 3}
+    - {fileID: 8300000, guid: b7ec6b248f1d72648ac6aef71fe447e9, type: 3}
+    - {fileID: 8300000, guid: 8acc3a66fd56dcc46b110c7a0d3213e4, type: 3}
+    audioShot: {fileID: 8300000, guid: 15a3211a3c389664a94d401850cad8c7, type: 3}
+    audioDistance: 7
+    hitpoints: 0.1
+    burst: 1
+    force: 1
+    shotDelay: 0.8
+    loop: 0
+  - turretName: Plasma Gun
+    turretType: 6
+    projectile: {fileID: 400000, guid: e7b84dec6cdbfb646a33fd06b85cf64e, type: 2}
+    muzzle: {fileID: 400002, guid: e4aff98840a58c94ea1cec28789d55d6, type: 2}
+    impact: {fileID: 400004, guid: ec543be1efaafca46aeac6f66e7a5ff0, type: 2}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 81a346a7999a81243b8e6e18df6852ef, type: 3}
+    - {fileID: 8300000, guid: 58a24ee7c3371ff49bb6833b316f040a, type: 3}
+    - {fileID: 8300000, guid: b3325a8b2aa1db6408262e058666a0e2, type: 3}
+    - {fileID: 8300000, guid: 7c9ba602437be9b4f9271fb55179b1b0, type: 3}
+    audioShot: {fileID: 8300000, guid: 1da3dd32414c56d41b46b52293cf7e4e, type: 3}
+    audioDistance: 7
+    hitpoints: 0.5
+    burst: 1
+    force: 1
+    shotDelay: 1
+    loop: 0
+  - turretName: Plasma Beam
+    turretType: 7
+    projectile: {fileID: 400000, guid: 66b50793fa1c780409218a1a1db5b1d8, type: 2}
+    muzzle: {fileID: 0}
+    impact: {fileID: 0}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: efa34f6c791b62249aea6d9dbfbd1087, type: 3}
+    - {fileID: 8300000, guid: 650a66a33ed959c4aa39de2afb9fdbb5, type: 3}
+    audioShot: {fileID: 8300000, guid: 959e88d28b35e2c419016ab8ee0d9e9d, type: 3}
+    audioDistance: 7
+    hitpoints: 0.01
+    burst: 0
+    force: 0
+    shotDelay: 0
+    loop: 1
+  - turretName: Plasma Heavy
+    turretType: 8
+    projectile: {fileID: 400000, guid: a5251bb5b54465f43aebe1ddc2724566, type: 2}
+    muzzle: {fileID: 0}
+    impact: {fileID: 0}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 37c2b8e42d3d3b44b8ea96cd214777b3, type: 3}
+    - {fileID: 8300000, guid: 650a66a33ed959c4aa39de2afb9fdbb5, type: 3}
+    audioShot: {fileID: 8300000, guid: 959e88d28b35e2c419016ab8ee0d9e9d, type: 3}
+    audioDistance: 7
+    hitpoints: 0.01
+    burst: 0
+    force: 0.2
+    shotDelay: 0
+    loop: 1
+  - turretName: Lighting Gun
+    turretType: 9
+    projectile: {fileID: 400002, guid: 497cce4f043498049994c48e6e47f0ae, type: 2}
+    muzzle: {fileID: 0}
+    impact: {fileID: 0}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: 51f46968ed339684b975b62416e9bd8e, type: 3}
+    - {fileID: 8300000, guid: 59ae4c7218192d443af48fa96d0883fe, type: 3}
+    audioShot: {fileID: 8300000, guid: 206809617a9f6dc4e813dfc96abc1da3, type: 3}
+    audioDistance: 7
+    hitpoints: 0.02
+    burst: 0
+    force: 0
+    shotDelay: 0
+    loop: 1
+  - turretName: Flamme
+    turretType: 10
+    projectile: {fileID: 400002, guid: bd9162be33a5ce54aa35d8e984e6d39d, type: 2}
+    muzzle: {fileID: 0}
+    impact: {fileID: 0}
+    offset: 0
+    audioHit:
+    - {fileID: 8300000, guid: e9de0ff43b3234847b84dac0c1304373, type: 3}
+    - {fileID: 8300000, guid: d9eac4dfc29abe64faa49306ee4b4205, type: 3}
+    audioShot: {fileID: 8300000, guid: 51b29026a14d387498c8a7e8df09f1ab, type: 3}
+    audioDistance: 7
+    hitpoints: 0.1
+    burst: 0
+    force: 1
+    shotDelay: 0
+    loop: 1
+--- !u!114 &114226509829209372
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260406626459432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23d3806ce61cfe4d8cdb84bb614e1c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114263189307681258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509557960347118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e51d46aadf24b4b813981141443db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  databaseName: WeaponRange
+  selectedItem: 0
+  haveToShowArr: 000000000000000000000000000000000000000000000000000000
+--- !u!114 &114920507987207736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260406626459432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5309af59ecdc1064aa93cd2541329379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

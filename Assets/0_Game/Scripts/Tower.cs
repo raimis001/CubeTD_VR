@@ -1,27 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Forge3D;
 
 public class Tower : MonoBehaviour
 {
 
-	public Transform rotor;
-	public Transform otter;
 	public Transform trail;
 	public float radius = 5;
 
-	[Range(0, 3)]
-	public float shotTime = 1;
-	[Range(0, 3)]
-	public float rotateSpeed = 1;
+	public TurretFXController fxSettup;
+	public F3DFXType fxType;
 
-	public GameObject bulletPrefab;
+	public Transform[] muzles;
 
 	private Enemy trackedEnemy;
-	private bool isShot;
+	private int turretID;
 	// Use this for initialization
 	void Start()
 	{
-		StartCoroutine(Trail());
+		if (trail) StartCoroutine(Trail());
+		if (!fxSettup)
+		{
+			fxSettup = TurretFXController.instance;
+		}
+
+		turretID = fxSettup.AddTurret(fxType, muzles);
 	}
 
 	// Update is called once per frame
@@ -33,62 +36,37 @@ public class Tower : MonoBehaviour
 		}
 		if (!trackedEnemy)
 		{
+			fxSettup.Stop(turretID);
 			return;
 		}
 
-		RotateTower();
-
-
-		if (!isShot) Shot();
+		F3DTurret turret = GetComponent<F3DTurret>();
+		if (turret) turret.SetNewTarget(trackedEnemy.hitTarget.position );
+		StartCoroutine(RandomDelayFire());
 	}
 
-	void RotateTower()
+	IEnumerator RandomDelayFire()
 	{
-		if (!trackedEnemy)
-		{
-			return;
-		}
-
-		Vector3 targetDir = trackedEnemy.transform.position - rotor.position;
-
-		// The step size is equal to speed times frame time.
-		float step = rotateSpeed * Time.deltaTime;
-
-		Vector3 newDir = Vector3.RotateTowards(rotor.forward, targetDir, step, 0.0f);
-		Debug.DrawRay(rotor.position, newDir, Color.red);
-
-		// Move our position a step closer to the target.
-		rotor.rotation = Quaternion.LookRotation(newDir);
+		yield return new WaitForSeconds(Random.value);
+		fxSettup.Fire(turretID);
 	}
 
 	void Shot()
 	{
 		if (!trackedEnemy) return;
-
-		Vector3 targetDir = trackedEnemy.transform.position - rotor.position;
-		if (Vector3.Angle(targetDir, rotor.forward) > 20) return;
-
-		Bullet bullet = Instantiate(bulletPrefab, otter.position, otter.rotation).GetComponent<Bullet>();
-		bullet.enemy = trackedEnemy;
-		StartCoroutine(WaitForShot());
 	}
 
-	IEnumerator WaitForShot()
-	{
-		isShot = true;
-		yield return new WaitForSeconds(shotTime);
-		isShot = false;
-	}
 
 	public Enemy FindClosestEnemy()
 	{
 		Enemy[] gos = FindObjectsOfType<Enemy>();
+		
 		Enemy closest = null;
 		float distance = Mathf.Infinity;
 		Vector3 position = transform.position;
 		foreach (Enemy go in gos)
 		{
-			if (Vector3.Distance(go.transform.position, position) > radius) continue;
+			//if (Vector3.Distance(go.transform.position, position) > radius) continue;
 			Vector3 diff = go.transform.position - position;
 			float curDistance = diff.sqrMagnitude;
 			if (curDistance < distance)
@@ -102,6 +80,8 @@ public class Tower : MonoBehaviour
 
 	IEnumerator Trail()
 	{
+		
+
 		float angle = 0;
 		while (true)
 		{

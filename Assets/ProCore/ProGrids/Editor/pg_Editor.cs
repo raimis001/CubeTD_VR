@@ -470,7 +470,8 @@ namespace ProGrids
 			instance = this;
 			SceneView.onSceneGUIDelegate += OnSceneGUI;
 			EditorApplication.update += Update;
-			EditorApplication.hierarchyWindowChanged += HierarchyWindowChanged;
+			//EditorApplication.hierarchyWindowChanged += HierarchyWindowChanged;
+			EditorApplication.hierarchyChanged += HierarchyWindowChanged;
 		}
 
 		void OnEnable()
@@ -485,11 +486,11 @@ namespace ProGrids
 		{
 			SceneView.onSceneGUIDelegate -= OnSceneGUI;
 			EditorApplication.update -= Update;
-			EditorApplication.hierarchyWindowChanged -= HierarchyWindowChanged;
+			EditorApplication.hierarchyChanged -= HierarchyWindowChanged;
 
 			SceneView.onSceneGUIDelegate += OnSceneGUI;
 			EditorApplication.update += Update;
-			EditorApplication.hierarchyWindowChanged += HierarchyWindowChanged;
+			EditorApplication.hierarchyChanged += HierarchyWindowChanged;
 
 			LoadGUIResources();
 			LoadPreferences();
@@ -531,7 +532,7 @@ namespace ProGrids
 
 			SceneView.onSceneGUIDelegate -= OnSceneGUI;
 			EditorApplication.update -= Update;
-			EditorApplication.hierarchyWindowChanged -= HierarchyWindowChanged;
+			EditorApplication.hierarchyChanged -= HierarchyWindowChanged;
 
 			instance = null;
 

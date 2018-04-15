@@ -1,0 +1,305 @@
+fileFormatVersion: 2
+guid: 93f9b8822397ea64bb489c6dd4b05b03
+timeCreated: 1516275782
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bone_finger_1_1
+    100002: bone_finger_1_2
+    100004: bone_finger_1_3
+    100006: bone_finger_2_1
+    100008: bone_finger_2_2
+    100010: bone_finger_2_3
+    100012: bone_finger_2_4
+    100014: bone_finger_3_1
+    100016: bone_finger_3_2
+    100018: bone_finger_3_3
+    100020: bone_finger_3_4
+    100022: bone_finger_4_1
+    100024: bone_finger_4_2
+    100026: bone_finger_4_3
+    100028: bone_finger_4_4
+    100030: bone_finger_5_1
+    100032: bone_finger_5_2
+    100034: bone_finger_5_3
+    100036: bone_finger_5_4
+    100038: bone_main_hande
+    100040: //RootNode
+    100042: Hand_rigged
+    400000: bone_finger_1_1
+    400002: bone_finger_1_2
+    400004: bone_finger_1_3
+    400006: bone_finger_2_1
+    400008: bone_finger_2_2
+    400010: bone_finger_2_3
+    400012: bone_finger_2_4
+    400014: bone_finger_3_1
+    400016: bone_finger_3_2
+    400018: bone_finger_3_3
+    400020: bone_finger_3_4
+    400022: bone_finger_4_1
+    400024: bone_finger_4_2
+    400026: bone_finger_4_3
+    400028: bone_finger_4_4
+    400030: bone_finger_5_1
+    400032: bone_finger_5_2
+    400034: bone_finger_5_3
+    400036: bone_finger_5_4
+    400038: bone_main_hande
+    400040: //RootNode
+    400042: Hand_rigged
+    4300000: Hand_rigged
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Hand_rigged
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #16'
+    second: {fileID: 2100000, guid: 5ddf9405730161843807e087d5498f36, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: bone_main_hande
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_1_2
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_5_2
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_2_1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_2_2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_2_4
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bone_finger_2_3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Hand_rigged(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_rigged
+      parentName: Hand_rigged(Clone)
+      position: {x: 0.005443146, y: 0.21246086, z: -0.0045329286}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bone_main_hande
+      parentName: Hand_rigged(Clone)
+      position: {x: 0.0013146973, y: -0.0009370601, z: 0.0059458017}
+      rotation: {x: -0.000000026580613, y: 0.000000026803992, z: -0.71005934, w: 0.70414186}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: bone_finger_2_1
+      parentName: bone_main_hande
+      position: {x: -0.15453608, y: 0.00019999608, z: 0.00000001525879}
+      rotation: {x: 0.00000053123546, y: 0.000000065838044, z: 0.12299287, w: 0.9924076}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1}
+    - name: bone_finger_2_2
+      parentName: bone_finger_2_1
+      position: {x: -0.10337589, y: -7.450581e-11, z: 0.000000004469918}
+      rotation: {x: -0.00000023776988, y: 0.000000017576959, z: -0.07372326, w: 0.9972788}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bone_finger_2_3
+      parentName: bone_finger_2_2
+      position: {x: -0.025249412, y: 2.4016347e-15, z: 0.000000004478101}
+      rotation: {x: -0.00014531164, y: -0.0045161103, z: -0.03217067, w: 0.99947226}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1}
+    - name: bone_finger_2_4
+      parentName: bone_finger_2_3
+      position: {x: -0.03475882, y: 0, z: 0.0000000025866485}
+      rotation: {x: -0.0009856251, y: -0.040171683, z: -0.0017905117, w: 0.99919075}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: bone_finger_1_1
+      parentName: bone_main_hande
+      position: {x: -0.15453973, y: 0.00023355012, z: 0}
+      rotation: {x: 0.023340646, y: -0.008693871, z: 0.35677087, w: 0.9338599}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1}
+    - name: bone_finger_1_2
+      parentName: bone_finger_1_1
+      position: {x: -0.07228845, y: 4.768372e-10, z: 0.0000000026910925}
+      rotation: {x: 0.0010722299, y: 0.0058962815, z: 0.901147, w: 0.43347234}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: bone_finger_1_3
+      parentName: bone_finger_1_2
+      position: {x: -0.036173273, y: 1.1368685e-15, z: 0.0000000011803553}
+      rotation: {x: -0.000000001863563, y: 0.0000000027939802, z: 0.13010158, w: 0.99150074}
+      scale: {x: 0.99999976, y: 1, z: 1}
+    - name: bone_finger_4_1
+      parentName: bone_main_hande
+      position: {x: -0.15453602, y: -0.00020001894, z: 0.00000001525879}
+      rotation: {x: -0.00000047532873, y: 0.000000037899973, z: -0.07948208, w: 0.9968363}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1}
+    - name: bone_finger_4_2
+      parentName: bone_finger_4_1
+      position: {x: -0.09865036, y: -4.0233136e-10, z: -4.1320175e-10}
+      rotation: {x: 0.000000393129, y: -0.00000001496259, z: 0.00073798746, w: 0.99999976}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1}
+    - name: bone_finger_4_3
+      parentName: bone_finger_4_2
+      position: {x: -0.027409753, y: 0.00000003584478, z: -4.9453824e-15}
+      rotation: {x: 0.00018086833, y: -0.006923585, z: 0.026113585, w: 0.999635}
+      scale: {x: 1.0000004, y: 1.0000007, z: 0.99999976}
+    - name: bone_finger_4_4
+      parentName: bone_finger_4_3
+      position: {x: -0.03939913, y: -0.0000000010244506, z: 8.229637e-18}
+      rotation: {x: 0.0023577153, y: -0.034399476, z: 0.04543081, w: 0.99837226}
+      scale: {x: 1.0000011, y: 1.0000008, z: 1.0000001}
+    - name: bone_finger_3_1
+      parentName: bone_main_hande
+      position: {x: -0.1548631, y: -0.00020274351, z: 0.00000001525879}
+      rotation: {x: -0.0000038144233, y: -0.000000045770957, z: 0.011998654, w: 0.99992806}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: bone_finger_3_2
+      parentName: bone_finger_3_1
+      position: {x: -0.10196655, y: 0.0000039963147, z: 0.000000004456466}
+      rotation: {x: 0.0000018842293, y: -0.000000048351186, z: -0.024127785, w: 0.99970895}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: bone_finger_3_3
+      parentName: bone_finger_3_2
+      position: {x: -0.027906206, y: -0.00000051879914, z: 0.0000000013688295}
+      rotation: {x: 0.00002277563, y: -0.0022517121, z: 0.010335912, w: 0.9999441}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1}
+    - name: bone_finger_3_4
+      parentName: bone_finger_3_3
+      position: {x: -0.038258, y: 0.000000031360425, z: 0.0000000018572759}
+      rotation: {x: 0.0002465628, y: -0.041380394, z: 0.0059728175, w: 0.99912566}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: bone_finger_5_1
+      parentName: bone_main_hande
+      position: {x: -0.15453964, y: 0.00023351386, z: 0.00000001525879}
+      rotation: {x: 0.000000112436794, y: -0.000000019453266, z: -0.17048243, w: 0.98536074}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1}
+    - name: bone_finger_5_2
+      parentName: bone_finger_5_1
+      position: {x: -0.097393155, y: -0.000000029832126, z: -0.0000000018002382}
+      rotation: {x: 0.000000043567606, y: -0.00000037537728, z: -0.9662632, w: 0.25755665}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: bone_finger_5_3
+      parentName: bone_finger_5_2
+      position: {x: -0.019196939, y: 0.000000033527613, z: 7.1558764e-13}
+      rotation: {x: 0.0002532176, y: -0.013512705, z: 0.018734261, w: 0.9997332}
+      scale: {x: 1.0000007, y: 1.000001, z: 0.99999994}
+    - name: bone_finger_5_4
+      parentName: bone_finger_5_3
+      position: {x: -0.021534326, y: -2.16005e-15, z: 3.112872e-10}
+      rotation: {x: 0.0055445903, y: -0.026101172, z: 0.00920355, w: 0.9996016}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.99999994}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

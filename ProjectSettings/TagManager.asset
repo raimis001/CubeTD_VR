@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - LeftController
+  - RightController
+  - SpaceScene_Galaxy
+  - SpaceScene_Nebula
+  - SpaceScene_LocalStar
+  - SpaceScene_Camera
+  - SpaceScene_Planet
+  - SpaceScene_Moon
   layers:
   - Default
   - TransparentFX
@@ -16,6 +24,17 @@ TagManager:
   - 
   - PostProcessing
   - Terrain
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - DeepSpace
   - 
   - 
   - 
@@ -26,18 +45,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Space
   m_SortingLayers:
   - name: Default
     uniqueID: 0
